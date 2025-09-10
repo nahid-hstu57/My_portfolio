@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import Root from '../Pages/Root';
 import Errormessege from '../Pages/Errormessege';
 import Home from '../Pages/Home';
+import About from '../Pages/About';
 
 export const router = createBrowserRouter([
   {
@@ -15,6 +16,9 @@ export const router = createBrowserRouter([
             index: true,
             path: "/",
             Component:Home
+        },
+        {path:"/about",
+        Component:About
         }
     ]
   },
