@@ -1,82 +1,67 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faInstagram,
+  faGithub,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
   return (
-    <div>
-      <div className="card lg:card-side bg-base-100 shadow-sm">
-        <div className="card-body pl-20">
-          <h2 className="card-title text-5xl">Hi,</h2>
-          <h2 className="card-title text-5xl">I'm Nahid</h2>
-          <h2 className="card-title text-3xl">Welcome to my Portfolio</h2>
-          <h3 className="text-4xl mt-20 justify-center flex  mb-6 align-middle">
-            Follow Me
-          </h3>
-          <div className="justify-center align-middle flex  mb-40">
-            <nav className="grid-flow-col gap-8 md:place-self-center md:justify-self-end flex ">
-              <a>
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="32"
-    height="32"
-    viewBox="0 0 24 24"
-    className="fill-current text-black"
-  >
-    <path
-      d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.309.975.975 1.247 2.242 1.309 3.608.058 1.266.069 1.646.069 4.85s-.011 3.584-.069 4.85c-.062 1.366-.334 2.633-1.309 3.608-.975.975-2.242 1.247-3.608 1.309-1.266.058-1.646.069-4.85.069s-3.584-.011-4.85-.069c-1.366-.062-2.633-.334-3.608-1.309-.975-.975-1.247-2.242-1.309-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.309-3.608.975-.975 2.242-1.247 3.608-1.309C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.771.131 4.659.345 3.678 1.326c-.981.981-1.195 2.093-1.254 3.374C2.013 8.332 2 8.741 2 12c0 3.259.013 3.668.072 4.948.059 1.281.273 2.393 1.254 3.374.981.981 2.093 1.195 3.374 1.254C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.281-.059 2.393-.273 3.374-1.254.981-.981 1.195-2.093 1.254-3.374.059-1.28.072-1.689.072-4.948s-.013-3.668-.072-4.948c-.059-1.281-.273-2.393-1.254-3.374-.981-.981-2.093-1.195-3.374-1.254C15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"
-    />
-  </svg>
-</a>
-              <a>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  className="fill-current"
-                >
-                  <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-                </svg>
-              </a>
-              <a>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  className="fill-current"
-                >
-                  <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-                </svg>
-              </a>
-              <a>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  className="fill-current"
-                >
-                  <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-                </svg>
-              </a>
-              <a>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  className="fill-current"
-                >
-                  <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
-                </svg>
-              </a>
-            </nav>
+    <div className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-10 lg:px-20">
+      <div className="card bg-base-100 shadow-sm flex flex-col lg:flex-row items-center w-full">
+        {/* Card Body */}
+        <div className="card-body flex-1 flex flex-col items-center lg:items-start text-center lg:text-left gap-4 lg:gap-6 py-6">
+          <h2 className="card-title text-4xl sm:text-5xl font-bold">Hi,</h2>
+          <h2 className="card-title text-4xl sm:text-5xl font-bold">I'm Nahid</h2>
+          <h3 className="text-2xl sm:text-3xl">Welcome to my Portfolio</h3>
+
+          <h3 className="text-xl sm:text-2xl mt-6">Follow Me</h3>
+
+          {/* Social Icons */}
+          <div className="flex gap-6 mt-2">
+            <a
+              href="https://www.facebook.com/md.nahid.hasan.31118"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-blue-600 transition text-2xl"
+            >
+              <FontAwesomeIcon icon={faFacebook} />
+            </a>
+            <a
+              href="https://www.instagram.com/_nahid_0007/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-pink-500 transition text-2xl"
+            >
+              <FontAwesomeIcon icon={faInstagram} />
+            </a>
+            <a
+              href="https://github.com/nahid-hstu57"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition text-2xl"
+            >
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/md-nahid-hasan-66a713348"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-blue-400 transition text-2xl"
+            >
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
           </div>
         </div>
-                <figure>
+
+        {/* Image */}
+        <figure className="flex-1">
           <img
             src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"
-            alt="Album"
+            alt="Portfolio"
+            className="w-full h-auto object-cover rounded-lg"
           />
         </figure>
       </div>

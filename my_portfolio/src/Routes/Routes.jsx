@@ -5,6 +5,8 @@ import Root from '../Pages/Root';
 import Errormessege from '../Pages/Errormessege';
 import Home from '../Pages/Home';
 import About from '../Pages/About';
+import Skills from '../Pages/Skills';
+import Contact from '../Pages/Contact';
 
 export const router = createBrowserRouter([
   {
@@ -19,7 +21,13 @@ export const router = createBrowserRouter([
         },
         {path:"/about",
         Component:About
-        }
+        },
+        {path:"/skills",
+        Component:Skills
+        },
+        {path:"/contact",
+        Component:Contact
+        },
     ]
   },
 ]);
