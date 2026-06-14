@@ -79,6 +79,16 @@ export default function Navbar() {
           </li>
           <li>
             <NavLink
+              to="/projects"
+              className={({ isActive }) =>
+                isActive ? `${navLinkStyles} ${activeStyles}` : navLinkStyles
+              }
+            >
+              Projects
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
               to="/contact"
               className={({ isActive }) =>
                 isActive ? `${navLinkStyles} ${activeStyles}` : navLinkStyles

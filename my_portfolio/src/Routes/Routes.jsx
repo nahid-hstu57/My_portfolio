@@ -1,38 +1,23 @@
-import React, { Component } from 'react'
 import { createBrowserRouter } from "react-router";
-import { RouterProvider } from "react-router/dom";
-import Root from '../Pages/Root';
-import Errormessege from '../Pages/Errormessege';
-import Home from '../Pages/Home';
-import About from '../Pages/About';
-import Skills from '../Pages/Skills';
-import Contact from '../Pages/Contact';
+import Root from "../Pages/Root.jsx";
+import Home from "../Pages/Home.jsx";
+import About from "../Pages/About.jsx";
+import Skills from "../Pages/Skills.jsx";
+import Projects from "../Pages/Projects.jsx";
+import Contact from "../Pages/Contact.jsx";
+import Errormessege from "../Pages/Errormessege.jsx";
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    Component:Root,
-    errorElement:<Errormessege></Errormessege>,
-    children:[
-        {
-            index: true,
-            path: "/",
-            Component:Home
-        },
-        {path:"/about",
-        Component:About
-        },
-        {path:"/skills",
-        Component:Skills
-        },
-        {path:"/contact",
-        Component:Contact
-        },
-    ]
+    element: <Root />,
+    errorElement: <Errormessege message="Page not found" />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: "about", element: <About /> },
+      { path: "skills", element: <Skills /> },
+      { path: "projects", element: <Projects /> },
+      { path: "contact", element: <Contact /> },
+    ],
   },
 ]);
-export default function Routes() {
-  return (
-    <div>Routes</div>
-  )
-}
